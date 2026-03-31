@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyrics | Explore o Seu Som</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="Logo-container">
+      <img src="imagens/Lyrics.png" alt="Logo" class="Logo">
+    </div>
+    <div class="search-container">
+      <input type="text" placeholder="O que você quer ouvir hoje?">
+    </div>
+    <div style="width: 100px;"></div> <!-- Espaçador para simetria -->
+    <div class="user" style="cursor: pointer;">
+      <!-- <img src="imagens\perfil.jpg" alt="User" class="user-img"> -->
+      <span class="username">Perfil</span>
+  </header>
+
+  <div class="layout">
+    <!-- MENU LATERAL -->
+    <nav class="menu-lateral">
+      <h3>Menu</h3>
+      <div class="menu-item active">Início</div>
+      <div class="menu-item">Minhas Listas</div>
+      <div class="menu-item">Álbuns</div>
+
+      <h3 style="margin-top: 30px;">Explorar</h3>
+      <div class="menu-item">Principais Artistas</div>
+      <div class="menu-item">Blog de Música</div>
+      <div class="menu-item">Gêneros e Estilos</div>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+      <div class="principal">
+
+        <!-- Seção de Destaque -->
+        <section class="hero">
+          <div class="hero-content">
+            <h2>Descubra sua próxima<br>música favorita.</h2>
+            <p>Acesse milhões de letras, traduções e novidades do mundo da música com um toque premium.</p>
+            <button class="btn-premium">ASSINAR PREMIUM</button>
+          </div>
+        </section>
+
+        <!-- Seção de Novidades -->
+        <div class="section-header">
+          <h2>Novidades & Populares</h2>
+          <a href="#" class="see-all">Ver tudo</a>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-image">#1</div>
+            <p class="card-title">Música 1</p>
+            <p class="card-subtitle">Artista Principal</p>
+          </div>
+          <div class="card">
+            <div class="card-image">#2</div>
+            <p class="card-title">Música 2</p>
+            <p class="card-subtitle">Artista Incrível</p>
+          </div>
+          <div class="card">
+            <div class="card-image">#3</div>
+            <p class="card-title">Música 3</p>
+            <p class="card-subtitle">Hit do Ano</p>
+          </div>
+          <div class="card">
+            <div class="card-image">#4</div>
+            <p class="card-title">Música 4</p>
+            <p class="card-subtitle">Nova Versão</p>
+          </div>
+          <div class="card">
+            <div class="card-image">#5</div>
+            <p class="card-title">Música 5</p>
+            <p class="card-subtitle">Remix Especial</p>
+          </div>
+          <div class="card">
+            <div class="card-image">#6</div>
+            <p class="card-title">Música 6</p>
+            <p class="card-subtitle">Acústico</p>
+          </div>
+        </div>
+
+        <!-- Seção de Perfis -->
+        <div class="section-header">
+          <h2>Artistas em Destaque</h2>
+          <a href="#" class="see-all">Ver todos</a>
+        </div>
+
+        <div class="artistas">
+          <div class="artista">
+            <div class="artista-img-wrapper"><img src="imagens\cod.webp"></div>
+            <p>Perfil 1</p>
+          </div>
+
+          <div class="artista">
+            <div class="artista-img-wrapper"><img src="imagens\anao.jpg"></div>
+            <p>Perfil 2</p>
+          </div>
+
+          <div class="artista">
+            <div class="artista-img-wrapper"><img src="imagens\pele.jpg"></div>
+            <p>Perfil 3</p>
+          </div>
+
+          <div class="artista">
+            <div class="artista-img-wrapper"><img src="imagens\sonico.jpg"></div>
+            <p>Perfil 4</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- BARRA LATERAL DE RECOMENDAÇÕES -->
+    <aside class="sidebar">
+      <h3>Recomendações ✨</h3>
+      <div class="recommendation-item">🎵 Música A - Top Br</div>
+      <div class="recommendation-item">🎵 Música B - Podcast</div>
+      <div class="recommendation-item">🎵 Música C - Relax</div>
+      <div class="recommendation-item">🎵 Música D - Workout</div>
+      <div class="recommendation-item">🎵 Música E - Pop Hits</div>
+
+      <div style="margin-top: 40px; background: var(--secondary-dark); padding: 20px; border-radius: 15px;">
+        <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 10px; color: var(--leaf-green);">OUÇA OFFLINE</p>
+        <p style="font-size: 0.9rem; margin-bottom: 15px; opacity: 0.8;">Leve suas músicas para qualquer lugar.</p>
+        <button class="btn-premium" style="width: 100%; font-size: 0.7rem; padding: 10px;">BAIXAR APP</button>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Lyrics - Trabalho de Cifras ✏️</p>
+    <p style="font-size: 0.7rem; margin-top: 10px; opacity: 0.6;">Design Moderno com tons de Verde</p>
+  </footer>
+
+  <!-- Informações do modal (Janela pro perfil) -->
+  <div id="profileModal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <iframe id="profileFrame" src="user.html" class="profile-iframe"></iframe>
+    </div>
+  </div>
+
+</body>
+
+</html>
