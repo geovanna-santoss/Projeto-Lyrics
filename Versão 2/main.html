@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lyrics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Navbar fixa com menu, busca e acesso rapido ao perfil -->
+    <header>
+      <div class="Logo-container">
+        <button
+          class="menu-toggle"
+          id="menuToggleBtn"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="floatingMenuDrawer"
+          aria-expanded="false"
+          title="Menu"
+        >
+          <span aria-hidden="true">☰</span>
+        </button>
+        <a href="main.html" class="logo">
+        <img src="imagens/Lyrics.png" alt="Logo do site" class="Logo" />
+        </a>
+      </div>
+
+      <div class="search-container">
+        <input id="searchInput" type="text" placeholder="Qual o som de hoje?" />
+      </div>
+
+      <div class="profile-actions">
+        <button
+          class="user user-button"
+          id="openProfileBtn"
+          type="button"
+          aria-label="Abrir perfil"
+          aria-haspopup="true"
+          aria-controls="profileQuickMenu"
+          aria-expanded="false"
+          data-tooltip="Perfil"
+        >
+          <img class="user-avatar" src="imagens/avatar-profile.svg" alt="Avatar do usuario" />
+        </button>
+
+        <div id="profileQuickMenu" class="profile-quick-menu" role="menu" aria-hidden="true">
+          <button id="openProfileMenuItem" class="profile-quick-item" type="button" role="menuitem">Meu perfil</button>
+          <button id="openSettingsItem" class="profile-quick-item" type="button" role="menuitem">Configurações</button>
+          <button id="logoutItem" class="profile-quick-item" type="button" role="menuitem">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteudo principal da home -->
+    <div class="layout">
+      <main class="main">
+        <div class="principal">
+          <!-- Banner principal de destaque -->
+          <section class="hero">
+            <div class="hero-content">
+              <h2>Descubra sua próxima musica favorita.</h2>
+              <p>Acesse milhões de letras, traduções e novidades do mundo da música com um toque premium.</p>
+              <button class="btn-premium" type="button">ASSINAR PREMIUM</button>
+            </div>
+          </section>
+
+          <!-- Cabecalho da secao com controles do carrossel -->
+          <div class="section-header section-header-carousel">
+            <h2>Novidades e Populares</h2>
+            <div class="section-header-actions">
+              <div class="carousel-controls" aria-label="Controles do carrossel">
+                <button id="cardsPrevBtn" class="carousel-button" type="button" aria-label="Voltar cards">&#10094;</button>
+                <button id="cardsNextBtn" class="carousel-button" type="button" aria-label="Avancar cards">&#10095;</button>
+              </div>
+              <a href="#" class="see-all"></a>
+            </div>
+          </div>
+
+          <!-- Carrossel de musicas em destaque -->
+          <div class="cards-carousel">
+            <div class="cards cards-track" id="cardsCarouselTrack">
+            <div class="card">
+              <div class="card-image">
+                <img src="imagens/lifeofpablo.jpeg" alt="Música 1">
+              </div>
+              <p class="card-title">The Life of Pablo</p>
+              <p class="card-subtitle">Álbum em Destaque</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="imagens/skeleta.jpeg" alt="Música 2">
+              </div>
+              <p class="card-title">Satanized</p>
+              <p class="card-subtitle">Hit do Ano</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="imagens/britneyspears.jpeg" alt="Música 3">
+              </div>
+              <p class="card-title">Britney Spears</p>
+              <p class="card-subtitle">Artista em Destaque</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="imagens/ceremony.jpg" alt="Música 4">
+              </div>
+              <p class="card-title">Ceremony and Devotion</p>
+              <p class="card-subtitle">Ao Vivo</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="imagens/massacration.jpg" alt="Música 5">
+              </div>
+              <p class="card-title">Good Blood Headbangers</p>
+              <p class="card-subtitle">Melhor Álbum de Metal Nacional</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="imagens/tameimpala.jfif" alt="Música 6">
+              </div>
+              <p class="card-title">The Less I Know The Better</p>
+              <p class="card-subtitle">Pra Lembrar e Sofrer Pela Garota que te Amava e que Você Deixou ir por Pura Burrice</p>
+            </div>
+            </div>
+          </div>
+
+          <!-- Lista de artistas em Destaque -->
+          <div class="section-header">
+            <h2>Artistas em Destaque</h2>
+            <a href="#" class="see-all">Ver todos</a>
+          </div>
+
+          <div class="artistas">
+           <div class="artista">
+            <div class="artista-img-wrapper">
+            <img src="imagens/kanye.jfif" alt="Perfil 1">
+           </div>
+           <p>Kanye West</p>
+          </div>
+
+          <div class="artista">
+            <div class="artista-img-wrapper">
+            <img src="imagens/ghost.jfif" alt="Perfil 2">
+           </div>
+          <p>Ghost</p>
+          </div>
+
+          <div class="artista">
+           <div class="artista-img-wrapper">
+           <img src="imagens/massacrationperfil.jfif" alt="Perfil 3">
+           </div>
+           <p>Massacration</p>
+          </div>
+
+          <div class="artista">
+            <div class="artista-img-wrapper">
+            <img src="imagens/tameimpalaperfil.jfif" alt="Perfil 4">
+            </div>
+            <p>Tame Impala</p>
+          </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Rodape institucional -->
+    <footer>
+      <p>© 2026 Lyrics - Trabalho de Cifras</p>
+      <p style="font-size: 0.7rem; margin-top: 10px; opacity: 0.6">Design moderno com tons de verde</p>
+    </footer>
+
+    <!-- Botao que abre a aba flutuante de recomendacoes -->
+    <button
+      id="floatingRecommendationsBtn"
+      class="floating-recommendations-btn"
+      type="button"
+      aria-controls="floatingRecommendationsTab"
+      aria-expanded="false"
+    >
+      Ver recomendações
+    </button>
+
+    <!-- Aba flutuante com recomendacoes e atalhos promocionais -->
+    <section id="floatingRecommendationsTab" class="floating-recommendations-tab" aria-hidden="true">
+      <div class="floating-tab-header" id="floatingTabDragHandle">
+        <h3>Recomendações</h3>
+        <button id="floatingTabClose" class="floating-tab-close" type="button" aria-label="Fechar aba">×</button>
+      </div>
+
+      <div id="floatingRecommendationsContent" class="floating-tab-content">
+        <div class="recommendation-item">🎵 The Mummy - Massacration</div>
+        <div class="recommendation-item">🎵 PeeWeeCast - Podcast</div>
+        <div class="recommendation-item">🎵 E85 - Don Toliver</div>
+        <div class="recommendation-item">🎵 4 Raws - EsDeeKid</div>
+        <div class="recommendation-item">🎵 ...Baby One More Time - Britney Spears</div>
+
+        <div style="margin-top: 24px; background: var(--secondary-dark); padding: 20px; border-radius: 15px">
+          <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 10px; color: var(--leaf-green)">OUÇA OFFLINE</p>
+          <p style="font-size: 0.9rem; margin-bottom: 15px; opacity: 0.8">Leve suas músicas para qualquer lugar.</p>
+          <button class="btn-premium" style="width: 100%; font-size: 0.7rem; padding: 10px" type="button">BAIXE O APP</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal principal com os dados do perfil do usuario -->
+    <div id="profileModal" class="modal">
+      <div class="modal-overlay" id="closeProfileOverlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="closeProfileBtn" type="button">×</button>
+
+        <div class="profile-panel">
+          <div class="profile-panel-header">
+            <div class="profile-img" aria-hidden="true">👤</div>
+            <h1 id="profileDisplayName">Usuário</h1>
+            <p id="profileDisplayEmail">meu.email@exemplo.com</p>
+          </div>
+
+          <div class="profile-panel-content">
+            <div class="profile-section">
+              <h2 class="titulo">Informações Pessoais</h2>
+              <div class="profile-item">
+                <div>
+                  <label>Nome Completo</label>
+                  <p id="profileFullNameValue" class="profile-item-value">João Silva Santos</p>
+                </div>
+                <button class="btn-edit" type="button">Editar</button>
+              </div>
+              <div class="profile-item">
+                <div>
+                  <label>Email</label>
+                  <p id="profileEmailValue" class="profile-item-value">meu.email@exemplo.com</p>
+                </div>
+                <button class="btn-edit" type="button">Editar</button>
+              </div>
+              <div class="profile-item">
+                <div>
+                  <label>Telefone</label>
+                  <p class="profile-item-value">(11) 98765-4321</p>
+                </div>
+                <button class="btn-edit" type="button">Editar</button>
+              </div>
+            </div>
+
+            <div class="profile-section">
+              <h2>Assinatura</h2>
+              <div class="profile-item">
+                <div>
+                  <label>Plano</label>
+                  <p id="profilePlanValue" class="profile-item-value">Premium</p>
+                </div>
+              </div>
+              <div class="profile-item">
+                <div>
+                  <label>Valido ate</label>
+                  <p class="profile-item-value">30 de Dezembro, 2026</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-section">
+              <h2>Preferencias</h2>
+              <div class="profile-item">
+                <div>
+                  <label>Notificacoes</label>
+                  <p class="profile-item-value">Ativadas</p>
+                </div>
+              </div>
+              <div class="profile-item">
+                <div>
+                  <label>Genero favorito</label>
+                  <p id="profileFavoriteGenreValue" class="profile-item-value">Não informado</p>
+                </div>
+                <button class="btn-edit" type="button">Trocar tema</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de login exibido antes do acesso ao perfil -->
+
+    <div id="loginModal" class="modal" aria-hidden="true">
+      <div class="modal-overlay" id="closeLoginOverlay"></div>
+      <div class="modal-content login-modal-content" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle">
+        <button class="modal-close" id="closeLoginBtn" type="button" aria-label="Fechar login">×</button>
+        <div class="login-modal-body">
+          <h2 id="loginModalTitle">Entrar para acessar Meu perfil</h2>
+          <p>Informe seu e-mail e senha para continuar.</p>
+
+          <!-- Formulário de login -->
+          <form id="loginForm" class="login-form">
+            <label for="loginEmail">E-mail</label>
+            <input id="loginEmail" name="email" type="email" placeholder="seu.email@exemplo.com" required />
+
+            <label for="loginPassword">Senha</label>
+            <input id="loginPassword" name="password" type="password" placeholder="Digite sua senha" required minlength="4" />
+
+            <p id="loginFeedback" class="login-feedback" aria-live="polite"></p>
+
+            <button class="btn-premium" type="submit">Entrar</button>
+            <p class="auth-toggle-text">Não tem conta? <button type="button" id="goToSignupBtn" class="auth-toggle-link">Cadastre-se</button></p>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Pop-up independente de cadastro -->
+    <div id="signupModal" class="modal" aria-hidden="true">
+      <div class="modal-overlay" id="closeSignupOverlay"></div>
+      <div class="modal-content login-modal-content" role="dialog" aria-modal="true" aria-labelledby="signupModalTitle">
+        <button class="modal-close" id="closeSignupBtn" type="button" aria-label="Fechar cadastro">×</button>
+        <div class="login-modal-body">
+          <h2 id="signupModalTitle">Criar uma conta</h2>
+          <p>Preencha os campos abaixo para se cadastrar.</p>
+          <form id="signupForm" class="login-form">
+            <label for="signupName">Nome</label>
+            <input id="signupName" name="name" type="text" placeholder="Seu nome completo" required />
+
+            <label for="signupEmail">E-mail</label>
+            <input id="signupEmail" name="email" type="email" placeholder="seu.email@exemplo.com" required />
+
+            <label for="signupPassword">Senha</label>
+            <input id="signupPassword" name="password" type="password" placeholder="Minimo 6 caracteres" required minlength="6" />
+
+            <label for="signupConfirm">Confirmar senha</label>
+            <input id="signupConfirm" name="confirm" type="password" placeholder="Repita a senha" required minlength="6" />
+
+            <p id="signupFeedback" class="login-feedback" aria-live="polite"></p>
+
+            <button class="btn-premium" type="submit">Criar conta</button>
+            <p class="auth-toggle-text">Já tem conta? <button type="button" id="goToLoginBtn" class="auth-toggle-link">Entrar</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="floatingMenuOverlay" class="floating-menu-overlay" aria-hidden="true"></div>
+    <aside id="floatingMenuDrawer" class="floating-menu-drawer" aria-hidden="true">
+      <div class="floating-menu-header">
+        <h3>Menu</h3>
+        <button id="floatingMenuClose" class="floating-menu-close" type="button" aria-label="Fechar menu">×</button>
+      </div>
+      <nav id="floatingMenuContent" class="floating-menu-content">
+        <h3>Menu</h3>
+        <div class="menu-item active">Início</div>
+        <div class="menu-item">Minhas Listas</div>
+        <div class="menu-item">Álbuns</div>
+
+        <h3 style="margin-top: 30px">Explorar</h3>
+        <div class="menu-item">Principais Artistas</div>
+        <div class="menu-item">Blog de Música</div>
+        <div class="menu-item">Gêneros e Estilos</div>
+      </nav>
+    </aside>
+
+    <script src="main.js"></script>
+  </body>
+</html>
