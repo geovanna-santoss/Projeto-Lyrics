@@ -173,6 +173,13 @@ header {
   transition: var(--transition);
 }
 
+/* Estilo dos links da navegação */
+.menu-item a {
+  text-decoration: none;
+  /* Cor branca e efeito de transição no hover */
+  color: white;
+}
+
 .menu-item:hover {
   background: var(--glass);
   color: var(--accent-green);
