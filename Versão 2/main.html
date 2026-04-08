@@ -63,7 +63,7 @@
       <main class="main">
         <div class="principal">
           <!-- Banner principal de destaque -->
-          <section class="hero">
+          <section id="inicio"class="hero">
             <div class="hero-content">
               <h2>Descubra sua próxima musica favorita.</h2>
               <p>Acesse milhões de letras, traduções e novidades do mundo da música com um toque premium.</p>
@@ -72,6 +72,7 @@
           </section>
 
           <!-- Cabecalho da secao com controles do carrossel -->
+         <section id="musicas">
           <div class="section-header section-header-carousel">
             <h2>Novidades e Populares</h2>
             <div class="section-header-actions">
@@ -130,8 +131,59 @@
             </div>
             </div>
           </div>
+          </section>
+
+        <section id="album">
+          <div class="section-header section-header-carousel">
+            <h2>Conheça esses álbuns</h2>
+            <div class="section-header-actions">
+              <div class="carousel-controls" aria-label="Controles do carrossel">
+                <button id="cardsPrevBtn" class="carousel-button" type="button" aria-label="Voltar cards">&#10094;</button>
+                <button id="cardsNextBtn" class="carousel-button" type="button" aria-label="Avancar cards">&#10095;</button>
+              </div>
+              <a href="#" class="see-all"></a>
+            </div>
+          </div>
+
+          <!-- Carrossel de musicas em destaque -->
+          <div class="cards-carousel">
+            <div class="cards cards-track" id="cardsCarouselTrack">
+            <div class="card">
+              <div class="card-image">
+                <img src="" alt="Música 1">
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="" alt="Música 2">
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="" alt="Música 3">
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="" alt="Música 4">
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="" alt="Música 5">
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="" alt="Música 6">
+              </div>
+            </div>
+            </div>
+          </div>
+          </section>
 
           <!-- Lista de artistas em Destaque -->
+        <section id="ArtistasDestaque">
           <div class="section-header">
             <h2>Artistas em Destaque</h2>
             <a href="#" class="see-all">Ver todos</a>
@@ -165,6 +217,7 @@
             </div>
             <p>Tame Impala</p>
           </div>
+        </section>
           </div>
         </div>
       </main>
@@ -173,7 +226,6 @@
     <!-- Rodape institucional -->
     <footer>
       <p>© 2026 Lyrics - Trabalho de Cifras</p>
-      <p style="font-size: 0.7rem; margin-top: 10px; opacity: 0.6">Design moderno com tons de verde</p>
     </footer>
 
     <!-- Botao que abre a aba flutuante de recomendacoes -->
@@ -187,7 +239,7 @@
       Ver recomendações
     </button>
 
-    <!-- Aba flutuante com recomendacoes e atalhos promocionais -->
+    <!-- Aba flutuante com recomendacoes -->
     <section id="floatingRecommendationsTab" class="floating-recommendations-tab" aria-hidden="true">
       <div class="floating-tab-header" id="floatingTabDragHandle">
         <h3>Recomendações</h3>
@@ -200,12 +252,6 @@
         <div class="recommendation-item">🎵 E85 - Don Toliver</div>
         <div class="recommendation-item">🎵 4 Raws - EsDeeKid</div>
         <div class="recommendation-item">🎵 ...Baby One More Time - Britney Spears</div>
-
-        <div style="margin-top: 24px; background: var(--secondary-dark); padding: 20px; border-radius: 15px">
-          <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 10px; color: var(--leaf-green)">OUÇA OFFLINE</p>
-          <p style="font-size: 0.9rem; margin-bottom: 15px; opacity: 0.8">Leve suas músicas para qualquer lugar.</p>
-          <button class="btn-premium" style="width: 100%; font-size: 0.7rem; padding: 10px" type="button">BAIXE O APP</button>
-        </div>
       </div>
     </section>
 
@@ -352,13 +398,12 @@
       </div>
       <nav id="floatingMenuContent" class="floating-menu-content">
         <h3>Menu</h3>
-        <div class="menu-item active">Início</div>
-        <div class="menu-item">Minhas Listas</div>
-        <div class="menu-item">Álbuns</div>
+        <div class="menu-item active"><a href="#inicio">Início</a></div>
+        <div class="menu-item"><a href="#musicas">Músicas populares</a></div>
+        <div class="menu-item"><a href="#album">Álbuns</a></div>
 
         <h3 style="margin-top: 30px">Explorar</h3>
-        <div class="menu-item">Principais Artistas</div>
-        <div class="menu-item">Blog de Música</div>
+        <div class="menu-item"><a href="#ArtistasDestaque">Principais Artistas</a></div>
         <div class="menu-item">Gêneros e Estilos</div>
       </nav>
     </aside>
